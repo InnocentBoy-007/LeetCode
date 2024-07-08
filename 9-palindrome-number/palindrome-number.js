@@ -4,9 +4,6 @@
  */
 var isPalindrome = function(x) {
     const palindrome = x.toString().split("").reverse().join("");
-    if(palindrome === x.toString()) {
-        return true;
-    }
-    return false;
+    return x<0 ? false:x === Number(palindrome)
 };
 
